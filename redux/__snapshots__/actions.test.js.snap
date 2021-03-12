@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loginUser returns actions dispatches LOG_IN_FULFILLED with correct creds 1`] = `
+Array [
+  Object {
+    "payload": "thisIsATestToken",
+    "type": "LOG_IN_FULFILLED",
+  },
+]
+`;
+
+exports[`loginUser returns actions dispatches LOG_IN_REJECTED with incorrect creds 1`] = `
+Array [
+  Object {
+    "payload": "shit fuck",
+    "type": "LOG_IN_REJECTED",
+  },
+]
+`;
+
+exports[`updateUser returns action:  handles empty name 1`] = `
+Object {
+  "payload": Object {
+    "name": "",
+  },
+  "type": "UPDATE_USER",
+}
+`;
+
+exports[`updateUser returns action:  handles empty object 1`] = `
+Object {
+  "payload": Object {},
+  "type": "UPDATE_USER",
+}
+`;
+
+exports[`updateUser returns action:  updateUser returns the correct action 1`] = `
+Object {
+  "payload": Object {
+    "name": "test name",
+  },
+  "type": "UPDATE_USER",
+}
+`;
